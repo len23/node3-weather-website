@@ -16,7 +16,7 @@ function getWeather(city) {
     }
     const {location, forecast} = data;
     messageTwo.textContent=location;
-    messageOne.textContent=forecast;
+    messageOne.innerHTML=forecast;
   })
 })
 }

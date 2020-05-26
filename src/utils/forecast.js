@@ -10,9 +10,9 @@ const forecast = (lat,lng,callback)=>{
     }else{
       const {temperature,feelslike,weather_descriptions} = body.current;
       const {timezone_id, country}=body.location;
-      callback(undefined,`It is currently ${temperature} degress out. It fells like ${feelslike} degress out. Weather Descriptions: ${weather_descriptions[0]}<br>
-      The time zone is: ${timezone_id}<br>
-      Country;${country}
+      callback(undefined,`It is currently ${temperature} degress out. It fells like ${feelslike} degress out.<br><br>  Weather Descriptions: ${weather_descriptions[0]}<br> <br>
+      The time zone is: ${timezone_id}<br><br>
+      Country:${country}
       `);
     } 
   });
